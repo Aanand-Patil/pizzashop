@@ -1,4 +1,11 @@
 import React from 'react'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '../ui/select'
 
 const Header = () => {
   return (
@@ -25,6 +32,16 @@ const Header = () => {
               fill='#484848'
             />
           </svg>
+          <Select>
+            <SelectTrigger className='w-[180px] focus:ring-0'>
+              <SelectValue placeholder='Select Restaurant' />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value='cheesy-delight'>Cheesy Delight</SelectItem>
+              <SelectItem value='pizza-hut'>Pizza Hut</SelectItem>
+              <SelectItem value='kids-corner'>Kids corner</SelectItem>
+            </SelectContent>
+          </Select>
         </div>
       </nav>
     </header>
