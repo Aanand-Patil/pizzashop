@@ -21,6 +21,7 @@ import { RadioGroup } from '@radix-ui/react-radio-group'
 import { ShoppingCart } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
+import ToppingList from './topping-list'
 
 export type Product = {
   id: string
@@ -157,7 +158,7 @@ const ProductCard = ({ product }: PropTypes) => {
                       </RadioGroup>
                     </div>
 
-                    {/* <ToppingList /> */}
+                    <ToppingList />
 
                     <div className='flex items-center justify-between mt-12'>
                       <span className='font-bold'>₹400</span>
