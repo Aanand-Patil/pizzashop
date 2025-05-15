@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import Image from 'next/image'
+import ProductCard, { Product } from './components/product-card'
 
 const products: Product[] = [
   {
@@ -80,16 +81,16 @@ export default function Home() {
             </TabsList>
             <TabsContent value='pizza'>
               <div className='grid grid-cols-4 gap-6 mt-6'>
-                {/* {products.map((product) => (
+                {products.map((product) => (
                   <ProductCard product={product} key={product.id} />
-                ))} */}
+                ))}
               </div>
             </TabsContent>
             <TabsContent value='beverages'>
               <div className='grid grid-cols-4 gap-6 mt-6'>
-                {/* {products.map((product) => (
+                {products.map((product) => (
                   <ProductCard product={product} key={product.id} />
-                ))} */}
+                ))}
               </div>
             </TabsContent>
           </Tabs>
